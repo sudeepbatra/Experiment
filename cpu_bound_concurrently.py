@@ -18,4 +18,4 @@ async def main():
     await task_two
 
 
-asyncio.run(main())
+asyncio.run(main(), debug=True)
