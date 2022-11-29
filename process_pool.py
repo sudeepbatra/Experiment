@@ -11,4 +11,3 @@ if __name__ == "__main__":
         hi_john = process_pool.apply(say_hello, args=('John',))
         print(hi_jeff)
         print(hi_john)
-r
