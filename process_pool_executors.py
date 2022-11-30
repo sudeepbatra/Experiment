@@ -14,6 +14,6 @@ def count(count_to: int) -> int:
 
 if __name__ == "__main__":
     with ProcessPoolExecutor() as process_pool:
-        numbers = [1, 3, 5, 22, 100000000, 200000000, 500000000, 1000000000, 5000000000]
+        numbers = [5000000000, 1, 3, 5, 22, 100000000, 200000000, 500000000, 1000000000]
         for result in process_pool.map(count, numbers):
             print(result)
