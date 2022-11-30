@@ -5,7 +5,7 @@ def say_hello(name: str) -> str:
     return f"Hello, {name}!"
 
 
-if __name__ == "__main__t":
+if __name__ == "__main__":
     with Pool() as process_pool:
         hi_jeff = process_pool.apply_async(say_hello, args=("Jeff",))
         hi_john = process_pool.apply_async(say_hello, args=("John",))
